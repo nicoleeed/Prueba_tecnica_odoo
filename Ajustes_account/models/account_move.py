@@ -91,5 +91,5 @@ class AccountMove(models.Model):
                 sale_orders = self.env['sale.order'].search([('name', '=', move.invoice_origin)])
                 move.picking_ids = sale_orders.mapped('picking_ids')
             else:
-                move.sale_order_ids = False
+                move.picking_ids = False
             
