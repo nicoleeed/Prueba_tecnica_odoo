@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Personalización de Punto de Venta",
+    'name': "Personalización de Facturación",
 
     'summary': """
-        Módulo personalizado de Punto de Venta""",
+        Módulo personalizado de Facturación""",
 
     'author': 'Nicole Durand Zeballos',
 	'website': "www.linkedin.com/in/nicole-alexia-durand-zeballos-46b231284",
@@ -14,7 +14,8 @@
     'version': '17.0',
     # any module necessary for this one to work correctly
     'depends': ['base',
-                'account',],
+                'account',
+                'sale',],
 
     # always loaded
     'data': [
