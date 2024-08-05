@@ -1,0 +1,25 @@
+<odoo>
+    <!-- CANALES DE VENTA PARA CARGARLOS AL MODELO DE CANAL DE VENTA AL INSTALARLO -->
+    <data noupdate="1">
+        <record id="sale_channel_online" model="sale.channel">
+            <field name="name">Online</field>
+            <field name="description">Venta en Linea</field>
+        </record>
+        <record id="sale_channel_retail" model="sale.channel">
+            <field name="name">Retail</field>
+            <field name="description">Venta en Retail</field>
+        </record>
+        <record id="sale_channel_instagram" model="sale.channel">
+            <field name="name">Instagram</field>
+            <field name="description">Venta por Instagram</field>
+        </record>
+        <record id="sale_channel_facebook" model="sale.channel">
+            <field name="name">Facebook</field>
+            <field name="description">Venta por Facebook</field>
+        </record>
+        <record id="sale_channel_whatsapp" model="sale.channel">
+            <field name="name">Whatsapp</field>
+            <field name="description">Venta por Whatsapp</field>
+        </record>
+    </data>
+</odoo>

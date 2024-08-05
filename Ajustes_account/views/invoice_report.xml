@@ -1,0 +1,34 @@
+<odoo>
+    
+    <template id="report_invoice_customized" inherit_id="account.report_invoice_document">
+        <!-- _                       _  
+            |_) ._     _  |_   _.   (_) 
+            |   | |_| (/_ |_) (_|   (_)  -->
+
+        <xpath expr="//div[@id='total']" position="after">
+                <td t-if="o.serial_number">
+                    <h5 style="font-weight: bold;">Número de serie:</h5>
+                    <span t-field="o.serial_number"></span>
+                    <h5 style="font-weight: bold;">Número correlativo:</h5>
+                    <span t-field="o.correlative_number"></span>
+                    <h5 style="font-weight: bold;">Fecha de Emisión:</h5>
+                    <span t-field="o.invoice_date_time"></span>
+                    <h5 style="font-weight: bold;">Transferencias relacionadas:</h5>
+                    <span t-field="o.picking_ids"></span>
+
+                </td>
+        </xpath>
+        
+        <!-- _                           
+            |_) ._     _  |_   _.   |_|_ 
+            |   | |_| (/_ |_) (_|     |    -->
+
+        <xpath expr="//div[@name='comment']" position="after">
+            <td style="text-align: center;" t-if="o.x_qr_invoice">
+                <div style="display: inline-block;">
+                    <span t-field="o.x_qr_invoice" t-options='{"widget": "image"}'/>
+                </div>
+            </td>
+        </xpath>
+    </template>
+</odoo>
