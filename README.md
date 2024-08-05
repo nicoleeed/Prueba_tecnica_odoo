@@ -39,4 +39,4 @@ Agregar cambios al reporte impreso.
 
 # Ejercicio 9
 Aregar en en la factura con todas las transferencias relacionadas, a la venta que genero la factura.
-![img5](img/9.png)
+![img9](img/5.png)
